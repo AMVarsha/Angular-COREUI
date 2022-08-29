@@ -141,9 +141,6 @@ export class WidgetsEComponent implements AfterContentInit {
     // @ts-ignore
     const locale =
       navigator.language ??
-      navigator.userLanguage ??
-      navigator.systemLanguage ??
-      navigator.browserLanguage ??
       'en-US';
     const baseDate = new Date(Date.UTC(2000, 1, 0)); // Monday
     baseDate.setDate(baseDate.getDate() + shift);
