@@ -1,25 +1,26 @@
 import { Component } from '@angular/core';
-import { UntypedFormBuilder, UntypedFormControl, UntypedFormGroup } from '@angular/forms';
+import {
+  UntypedFormBuilder,
+  UntypedFormControl,
+  UntypedFormGroup,
+} from '@angular/forms';
 
 @Component({
   selector: 'app-button-groups',
   templateUrl: './button-groups.component.html',
-  styleUrls: ['./button-groups.component.scss']
+  styleUrls: ['./button-groups.component.scss'],
 })
 export class ButtonGroupsComponent {
-
   formCheck1 = this.formBuilder.group({
     checkbox1: false,
     checkbox2: false,
-    checkbox3: false
+    checkbox3: false,
   });
   formRadio1 = new UntypedFormGroup({
-    radio1: new UntypedFormControl('Radio1')
+    radio1: new UntypedFormControl('Radio1'),
   });
 
-  constructor(
-    private formBuilder: UntypedFormBuilder
-  ) { }
+  constructor(private formBuilder: UntypedFormBuilder) {}
 
   setCheckBoxValue(controlName: string) {
     const prevValue = this.formCheck1.get(controlName)?.value;

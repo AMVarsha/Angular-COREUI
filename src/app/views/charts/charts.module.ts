@@ -17,8 +17,7 @@ import { DocsComponentsModule } from '@docs-components/docs-components.module';
     CardModule,
     GridModule,
     BadgeModule,
-    DocsComponentsModule
-  ]
+    DocsComponentsModule,
+  ],
 })
-export class ChartsModule {
-}
+export class ChartsModule {}

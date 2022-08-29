@@ -5,10 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './toast-sample-icon.component.svg',
 })
 export class ToastSampleIconComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

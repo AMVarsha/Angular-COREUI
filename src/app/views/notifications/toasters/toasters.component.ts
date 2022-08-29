@@ -21,10 +21,9 @@ export enum Colors {
 @Component({
   selector: 'app-toasters',
   templateUrl: './toasters.component.html',
-  styleUrls: ['./toasters.component.scss']
+  styleUrls: ['./toasters.component.scss'],
 })
 export class ToastersComponent implements OnInit {
-
   positions = Object.values(ToasterPlacement);
   position = ToasterPlacement.TopEnd;
   positionStatic = ToasterPlacement.Static;
@@ -37,18 +36,23 @@ export class ToastersComponent implements OnInit {
 
   toasterForm = new UntypedFormGroup({
     autohide: new UntypedFormControl(this.autohide),
-    delay: new UntypedFormControl({value: this.delay, disabled: !this.autohide}),
+    delay: new UntypedFormControl({
+      value: this.delay,
+      disabled: !this.autohide,
+    }),
     position: new UntypedFormControl(this.position),
-    fade: new UntypedFormControl({value: true, disabled: false}),
+    fade: new UntypedFormControl({ value: true, disabled: false }),
     closeButton: new UntypedFormControl(true),
-    color: new UntypedFormControl('')
+    color: new UntypedFormControl(''),
   });
 
   @ViewChildren(ToasterComponent) viewChildren!: QueryList<ToasterComponent>;
 
   ngOnInit(): void {
-    this.formChanges = this.toasterForm.valueChanges.pipe(filter(e => e.autohide !== this.autohide));
-    this.formChanges.subscribe(e => {
+    this.formChanges = this.toasterForm.valueChanges.pipe(
+      filter((e) => e.autohide !== this.autohide)
+    );
+    this.formChanges.subscribe((e) => {
       this.autohide = e.autohide;
       this.position = e.position;
       this.fade = e.fade;
@@ -60,10 +64,12 @@ export class ToastersComponent implements OnInit {
 
   addToast() {
     const formValues = this.toasterForm.value;
-    const toasterPosition = this.viewChildren.filter(item => item.placement === this.toasterForm.value.position);
+    const toasterPosition = this.viewChildren.filter(
+      (item) => item.placement === this.toasterForm.value.position
+    );
     toasterPosition.forEach((item) => {
       const title = `Toast ${formValues.color} ${formValues.position}`;
-      const {...props} = {...formValues, title};
+      const { ...props } = { ...formValues, title };
       const componentRef = item.addToast(AppToastComponent, props, {});
       componentRef.instance['closeButton'] = props.closeButton;
     });

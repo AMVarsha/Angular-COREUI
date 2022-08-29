@@ -16,7 +16,7 @@ describe('ChartsComponent', () => {
     TestBed.configureTestingModule({
       declarations: [ChartsComponent],
       imports: [GridModule, CardModule, DocsComponentsModule, ChartjsModule],
-      providers: [IconSetService]
+      providers: [IconSetService],
     }).compileComponents();
   }));
 

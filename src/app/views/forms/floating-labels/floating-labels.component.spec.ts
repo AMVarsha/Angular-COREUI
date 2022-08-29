@@ -15,10 +15,15 @@ describe('FloatingLabelsComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [FloatingLabelsComponent],
-      imports: [CardModule, GridModule, DocsComponentsModule, RouterTestingModule, FormModule],
-      providers: [IconSetService]
-    })
-      .compileComponents();
+      imports: [
+        CardModule,
+        GridModule,
+        DocsComponentsModule,
+        RouterTestingModule,
+        FormModule,
+      ],
+      providers: [IconSetService],
+    }).compileComponents();
   });
 
   beforeEach(() => {

@@ -14,10 +14,14 @@ describe('ToastComponent', () => {
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [AppToastComponent],
-      imports: [NoopAnimationsModule, ToastModule, ProgressModule, ButtonModule],
-      providers: [IconSetService]
-    })
-      .compileComponents();
+      imports: [
+        NoopAnimationsModule,
+        ToastModule,
+        ProgressModule,
+        ButtonModule,
+      ],
+      providers: [IconSetService],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

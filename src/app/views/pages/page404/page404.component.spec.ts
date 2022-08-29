@@ -13,11 +13,10 @@ describe('Page404Component', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ Page404Component ],
+      declarations: [Page404Component],
       imports: [FormModule, GridModule, ButtonModule, IconModule],
-      providers: [IconSetService]
-    })
-    .compileComponents();
+      providers: [IconSetService],
+    }).compileComponents();
   });
 
   beforeEach(() => {

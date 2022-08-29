@@ -14,11 +14,16 @@ describe('RangesComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ RangesComponent ],
-      imports: [CardModule, GridModule, FormModule, DocsComponentsModule, RouterTestingModule],
-      providers: [IconSetService]
-    })
-    .compileComponents();
+      declarations: [RangesComponent],
+      imports: [
+        CardModule,
+        GridModule,
+        FormModule,
+        DocsComponentsModule,
+        RouterTestingModule,
+      ],
+      providers: [IconSetService],
+    }).compileComponents();
   });
 
   beforeEach(() => {

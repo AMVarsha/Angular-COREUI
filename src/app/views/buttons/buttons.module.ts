@@ -20,17 +20,13 @@ import {
   NavbarModule,
   NavModule,
   SharedModule,
-  UtilitiesModule
+  UtilitiesModule,
 } from '@coreui/angular';
 
 import { IconModule } from '@coreui/icons-angular';
 
 @NgModule({
-  declarations: [
-    ButtonsComponent,
-    ButtonGroupsComponent,
-    DropdownsComponent,
-  ],
+  declarations: [ButtonsComponent, ButtonGroupsComponent, DropdownsComponent],
   imports: [
     CommonModule,
     ButtonsRoutingModule,
@@ -48,8 +44,7 @@ import { IconModule } from '@coreui/icons-angular';
     NavbarModule,
     CollapseModule,
     NavModule,
-    NavbarModule
-  ]
+    NavbarModule,
+  ],
 })
-export class ButtonsModule {
-}
+export class ButtonsModule {}

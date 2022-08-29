@@ -10,49 +10,48 @@ const routes: Routes = [
   {
     path: '',
     data: {
-      title: 'Notifications'
+      title: 'Notifications',
     },
     children: [
       {
         path: '',
         pathMatch: 'full',
-        redirectTo: 'badges'
+        redirectTo: 'badges',
       },
       {
         path: 'alerts',
         component: AlertsComponent,
         data: {
-          title: 'Alerts'
-        }
+          title: 'Alerts',
+        },
       },
       {
         path: 'badges',
         component: BadgesComponent,
         data: {
-          title: 'Badges'
-        }
+          title: 'Badges',
+        },
       },
       {
         path: 'modal',
         component: ModalsComponent,
         data: {
-          title: 'Modal'
-        }
+          title: 'Modal',
+        },
       },
       {
         path: 'toasts',
         component: ToastersComponent,
         data: {
-          title: 'Toasts'
-        }
-      }
-    ]
-  }
+          title: 'Toasts',
+        },
+      },
+    ],
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class NotificationsRoutingModule {
-}
+export class NotificationsRoutingModule {}

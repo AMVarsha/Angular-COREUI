@@ -16,10 +16,16 @@ describe('AccordionsComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [AccordionsComponent],
-      imports: [AccordionModule, NoopAnimationsModule, CardModule, GridModule, DocsComponentsModule, RouterTestingModule],
-      providers: [IconSetService]
-    })
-      .compileComponents();
+      imports: [
+        AccordionModule,
+        NoopAnimationsModule,
+        CardModule,
+        GridModule,
+        DocsComponentsModule,
+        RouterTestingModule,
+      ],
+      providers: [IconSetService],
+    }).compileComponents();
   });
 
   beforeEach(() => {

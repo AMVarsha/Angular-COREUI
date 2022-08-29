@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   templateUrl: './breadcrumbs.component.html',
-  styleUrls: ['./breadcrumbs.component.scss']
+  styleUrls: ['./breadcrumbs.component.scss'],
 })
 export class BreadcrumbsComponent implements OnInit {
   public items = <any>[];
@@ -14,7 +14,7 @@ export class BreadcrumbsComponent implements OnInit {
       { label: 'Home', url: '/', attributes: { title: 'Home' } },
       { label: 'Library', url: '/' },
       { label: 'Data', url: '/dashboard/' },
-      { label: 'CoreUI', url: '/' }
+      { label: 'CoreUI', url: '/' },
     ];
 
     setTimeout(() => {
@@ -22,7 +22,7 @@ export class BreadcrumbsComponent implements OnInit {
         { label: 'CoreUI', url: '/' },
         { label: 'Data', url: '/dashboard/' },
         { label: 'Library', url: '/' },
-        { label: 'Home', url: '/', attributes: { title: 'Home' } }
+        { label: 'Home', url: '/', attributes: { title: 'Home' } },
       ];
     }, 5000);
   }

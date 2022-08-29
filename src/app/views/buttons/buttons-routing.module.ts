@@ -9,43 +9,41 @@ const routes: Routes = [
   {
     path: '',
     data: {
-      title: 'Buttons'
+      title: 'Buttons',
     },
     children: [
       {
         path: '',
         pathMatch: 'full',
-        redirectTo: 'buttons'
+        redirectTo: 'buttons',
       },
       {
         path: 'buttons',
         component: ButtonsComponent,
         data: {
-          title: 'Buttons'
-        }
+          title: 'Buttons',
+        },
       },
       {
         path: 'button-groups',
         component: ButtonGroupsComponent,
         data: {
-          title: 'Button groups'
-        }
+          title: 'Button groups',
+        },
       },
       {
         path: 'dropdowns',
         component: DropdownsComponent,
         data: {
-          title: 'Dropdowns'
-        }
+          title: 'Dropdowns',
+        },
       },
-    ]
-  }
+    ],
+  },
 ];
-
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class ButtonsRoutingModule {
-}
+export class ButtonsRoutingModule {}

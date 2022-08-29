@@ -15,10 +15,17 @@ describe('TabsComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [TabsComponent],
-      imports: [TabsModule, GridModule, CardModule, IconModule, RouterTestingModule, NavModule, DocsComponentsModule],
-      providers: [IconSetService]
-    })
-      .compileComponents();
+      imports: [
+        TabsModule,
+        GridModule,
+        CardModule,
+        IconModule,
+        RouterTestingModule,
+        NavModule,
+        DocsComponentsModule,
+      ],
+      providers: [IconSetService],
+    }).compileComponents();
   });
 
   beforeEach(() => {

@@ -23,33 +23,33 @@ CoreUI is meant to be the UX game changer. Pure & transparent code is devoid of 
 
 ## Table of Contents
 
-* [Versions](#versions)
-* [CoreUI Pro](#coreui-pro)
-* [Quick Start](#quick-start)
-* [Installation](#installation)
-* [Basic usage](#basic-usage)
-* [What's included](#whats-included)
-* [Documentation](#documentation)
-* [Versioning](#versioning)
-* [Creators](#creators)
-* [Community](#community)
-* [Copyright and License](#copyright-and-license)
+- [Versions](#versions)
+- [CoreUI Pro](#coreui-pro)
+- [Quick Start](#quick-start)
+- [Installation](#installation)
+- [Basic usage](#basic-usage)
+- [What's included](#whats-included)
+- [Documentation](#documentation)
+- [Versioning](#versioning)
+- [Creators](#creators)
+- [Community](#community)
+- [Copyright and License](#copyright-and-license)
 
 ## Versions
 
-* [CoreUI Free Bootstrap Admin Template](https://github.com/coreui/coreui-free-bootstrap-admin-template)
-* [CoreUI Free Angular Admin Template](https://github.com/coreui/coreui-free-angular-admin-template)
-* [CoreUI Free React.js Admin Template](https://github.com/coreui/coreui-free-react-admin-template)
-* [CoreUI Free Vue.js Admin Template](https://github.com/coreui/coreui-free-vue-admin-template)
+- [CoreUI Free Bootstrap Admin Template](https://github.com/coreui/coreui-free-bootstrap-admin-template)
+- [CoreUI Free Angular Admin Template](https://github.com/coreui/coreui-free-angular-admin-template)
+- [CoreUI Free React.js Admin Template](https://github.com/coreui/coreui-free-react-admin-template)
+- [CoreUI Free Vue.js Admin Template](https://github.com/coreui/coreui-free-vue-admin-template)
 
 ## CoreUI Pro
 
 **Only customers with [Enterpise Membership Plan](https://coreui.io/pro/#buy) have access to private github CoreUI Pro repository.**
 
-* 💪  [CoreUI Pro Angular Admin Template](https://coreui.io/product/angular-dashboard-template/)
-* 💪  [CoreUI Pro Bootstrap Admin Template](https://coreui.io/product/bootstrap-dashboard-template/)
-* 💪  [CoreUI Pro React Admin Template](https://coreui.io/product/react-dashboard-template/)
-* 💪  [CoreUI Pro Vue Admin Template](https://coreui.io/product/vue-dashboard-template/)
+- 💪 [CoreUI Pro Angular Admin Template](https://coreui.io/product/angular-dashboard-template/)
+- 💪 [CoreUI Pro Bootstrap Admin Template](https://coreui.io/product/bootstrap-dashboard-template/)
+- 💪 [CoreUI Pro React Admin Template](https://coreui.io/product/react-dashboard-template/)
+- 💪 [CoreUI Pro Vue Admin Template](https://coreui.io/product/vue-dashboard-template/)
 
 ## Quick Start
 
@@ -57,29 +57,33 @@ CoreUI is meant to be the UX game changer. Pure & transparent code is devoid of 
 - Clone the repo: `git clone https://github.com/coreui/coreui-free-angular-admin-template.git`
 
 #### <i>Prerequisites</i>
+
 Before you begin, make sure your development environment includes `Node.js®` and an `npm` package manager.
 
 ###### Node.js
+
 Angular 14 requires `Node.js` version `^14.15` or `^16.10`.
 
 - To check your version, run `node -v` in a terminal/console window.
 - To get `Node.js`, go to [nodejs.org](https://nodejs.org/).
 
 ###### Angular CLI
+
 Install the Angular CLI globally using a terminal/console window.
+
 ```bash
 npm install -g @angular/cli
 ```
 
 ### Installation
 
-``` bash
+```bash
 $ npm install
 ```
 
 ### Basic usage
 
-``` bash
+```bash
 # dev server with hot reload at http://localhost:4200
 $ npm start
 ```
@@ -94,6 +98,7 @@ Run `build` to build the project. The build artifacts will be stored in the `dis
 # build for production with minification
 $ npm run build
 ```
+
 ## What's included
 
 Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
@@ -158,12 +163,14 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Creators
 
 **Łukasz Holeczek**
-* <https://twitter.com/lukaszholeczek>
-* <https://github.com/mrholek>
-* <https://github.com/coreui>
+
+- <https://twitter.com/lukaszholeczek>
+- <https://github.com/mrholek>
+- <https://github.com/coreui>
 
 **CoreUI team**
-* https://github.com/orgs/coreui/people
+
+- https://github.com/orgs/coreui/people
 
 ## Community
 
@@ -188,7 +195,7 @@ Support this project by [becoming a Platinum Sponsor](https://opencollective.com
 
 Support this project by [becoming a Gold Sponsor](https://opencollective.com/coreui/contribute/gold-sponsor-40960/). A big company logo will be added here with a link to your website.
 
-<a href="https://opencollective.com/coreui/contribute/gold-sponsor-40960/checkout"><img src="https://opencollective.com/coreui/tiers/gold-sponsor/0/avatar.svg?avatarHeight=100"></a> 
+<a href="https://opencollective.com/coreui/contribute/gold-sponsor-40960/checkout"><img src="https://opencollective.com/coreui/tiers/gold-sponsor/0/avatar.svg?avatarHeight=100"></a>
 
 ### Silver Sponsors
 
@@ -200,7 +207,7 @@ Support this project by [becoming a Silver Sponsor](https://opencollective.com/c
 
 Support this project by [becoming a Bronze Sponsor](https://opencollective.com/coreui/contribute/bronze-sponsor-40966/). The company avatar will show up here with a link to your OpenCollective Profile.
 
-<a href="https://opencollective.com/coreui/contribute/bronze-sponsor-40966/checkout"><img src="https://opencollective.com/coreui/tiers/bronze-sponsor/0/avatar.svg?avatarHeight=100"></a> 
+<a href="https://opencollective.com/coreui/contribute/bronze-sponsor-40966/checkout"><img src="https://opencollective.com/coreui/tiers/bronze-sponsor/0/avatar.svg?avatarHeight=100"></a>
 
 ### Backers
 
@@ -212,9 +219,8 @@ Thanks to all the backers and sponsors! Support this project by [becoming a back
 
 ## Copyright and License
 
-copyright 2022 creativeLabs Łukasz Holeczek.   
+copyright 2022 creativeLabs Łukasz Holeczek.
 
- 
 Code released under [the MIT license](https://github.com/coreui/coreui-free-react-admin-template/blob/master/LICENSE).
 There is only one limitation you can't re-distribute the CoreUI as stock. You can’t do this if you modify the CoreUI. In past we faced some problems with persons who tried to sell CoreUI based templates.
-"# Angular-COREUI" 
+"# Angular-COREUI"

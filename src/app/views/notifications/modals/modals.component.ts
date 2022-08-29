@@ -3,13 +3,12 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-modals',
   templateUrl: './modals.component.html',
-  styleUrls: ['./modals.component.scss']
+  styleUrls: ['./modals.component.scss'],
 })
 export class ModalsComponent {
-
   public liveDemoVisible = false;
 
-  constructor() { }
+  constructor() {}
 
   toggleLiveDemo() {
     this.liveDemoVisible = !this.liveDemoVisible;

@@ -15,10 +15,15 @@ describe('ProgressComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ProgressComponent],
-      imports: [ProgressModule, CardModule, GridModule, DocsComponentsModule, RouterTestingModule],
-      providers: [IconSetService]
-    })
-      .compileComponents();
+      imports: [
+        ProgressModule,
+        CardModule,
+        GridModule,
+        DocsComponentsModule,
+        RouterTestingModule,
+      ],
+      providers: [IconSetService],
+    }).compileComponents();
   });
 
   beforeEach(() => {

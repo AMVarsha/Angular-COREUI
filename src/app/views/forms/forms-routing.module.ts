@@ -14,77 +14,76 @@ const routes: Routes = [
   {
     path: '',
     data: {
-      title: 'Forms'
+      title: 'Forms',
     },
     children: [
       {
         path: '',
         pathMatch: 'full',
-        redirectTo: 'form-control'
+        redirectTo: 'form-control',
       },
       {
         path: 'form-control',
         component: FormControlsComponent,
         data: {
-          title: 'Form Control'
-        }
+          title: 'Form Control',
+        },
       },
       {
         path: 'select',
         component: SelectComponent,
         data: {
-          title: 'Select'
-        }
+          title: 'Select',
+        },
       },
       {
         path: 'checks-radios',
         component: ChecksRadiosComponent,
         data: {
-          title: 'Checks & Radios'
-        }
+          title: 'Checks & Radios',
+        },
       },
       {
         path: 'range',
         component: RangesComponent,
         data: {
-          title: 'Range'
-        }
+          title: 'Range',
+        },
       },
       {
         path: 'input-group',
         component: InputGroupsComponent,
         data: {
-          title: 'Input Group'
-        }
+          title: 'Input Group',
+        },
       },
       {
         path: 'floating-labels',
         component: FloatingLabelsComponent,
         data: {
-          title: 'Floating Labels'
-        }
+          title: 'Floating Labels',
+        },
       },
       {
         path: 'layout',
         component: LayoutComponent,
         data: {
-          title: 'Layout'
-        }
+          title: 'Layout',
+        },
       },
       {
         path: 'validation',
         component: ValidationComponent,
         data: {
-          title: 'Validation'
-        }
-      }
-    ]
-  }
+          title: 'Validation',
+        },
+      },
+    ],
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class FormsRoutingModule {
-}
+export class FormsRoutingModule {}

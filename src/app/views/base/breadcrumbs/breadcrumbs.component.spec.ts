@@ -15,8 +15,14 @@ describe('BreadcrumbsComponent', () => {
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [BreadcrumbsComponent],
-      imports: [CardModule, GridModule, BreadcrumbModule, RouterTestingModule, DocsComponentsModule],
-      providers: [IconSetService]
+      imports: [
+        CardModule,
+        GridModule,
+        BreadcrumbModule,
+        RouterTestingModule,
+        DocsComponentsModule,
+      ],
+      providers: [IconSetService],
     }).compileComponents();
   }));
 

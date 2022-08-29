@@ -3,17 +3,16 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-validation',
   templateUrl: './validation.component.html',
-  styleUrls: ['./validation.component.scss']
+  styleUrls: ['./validation.component.scss'],
 })
 export class ValidationComponent implements OnInit {
-
   customStylesValidated = false;
   browserDefaultsValidated = false;
   tooltipValidated = false;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void { }
+  ngOnInit(): void {}
 
   onSubmit1() {
     this.customStylesValidated = true;
@@ -44,6 +43,4 @@ export class ValidationComponent implements OnInit {
     this.tooltipValidated = false;
     console.log('Reset... 3');
   }
-
-
 }
