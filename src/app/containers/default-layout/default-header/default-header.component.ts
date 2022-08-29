@@ -8,7 +8,7 @@ import { ClassToggleService, HeaderComponent } from '@coreui/angular';
   templateUrl: './default-header.component.html',
 })
 export class DefaultHeaderComponent extends HeaderComponent {
-  @Input() sidebarId: string = 'sidebar';
+  @Input() sidebarId = 'sidebar';
 
   public newMessages = new Array(4);
   public newTasks = new Array(5);
