@@ -7,27 +7,10 @@ import { Title } from '@angular/platform-browser';
 
 @Component({
   // tslint:disable-next-line:component-selector
-  selector: 'body',
-  template: '<router-outlet></router-outlet>',
+  selector: 'app-root',
+  templateUrl: './app.component.html',
 })
-export class AppComponent implements OnInit {
+export class AppComponent{
   title = 'CoreUI Free Angular Admin Template';
 
-  constructor(
-    private router: Router,
-    private titleService: Title,
-    private iconSetService: IconSetService
-  ) {
-    titleService.setTitle(this.title);
-    // iconSet singleton
-    iconSetService.icons = { ...iconSubset };
-  }
-
-  ngOnInit(): void {
-    this.router.events.subscribe((evt) => {
-      if (!(evt instanceof NavigationEnd)) {
-        return;
-      }
-    });
-  }
 }
