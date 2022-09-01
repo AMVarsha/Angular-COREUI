@@ -10,7 +10,6 @@ import { Title } from '@angular/platform-browser';
   selector: 'app-root',
   templateUrl: './app.component.html',
 })
-export class AppComponent{
+export class AppComponent {
   title = 'CoreUI Free Angular Admin Template';
-
 }
